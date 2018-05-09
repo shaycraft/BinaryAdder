@@ -2,11 +2,13 @@
 
 namespace BinaryAdder
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BAdder adder = new BAdder("101", "11");
+
+            Console.WriteLine(adder.AddIt());
         }
     }
 }
