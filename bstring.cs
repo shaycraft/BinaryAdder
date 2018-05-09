@@ -32,21 +32,25 @@ namespace BinaryAdder
                     {
                         _vals[i] = '0';
                     }
-
-                    _vals[index] = value;
                 }
+                _vals[index] = value;
             }
         }
 
         public bstring(string s)
         {
-            if (s.Any(s => s != '0' && s != '1'))
+            if (s.Any(x => x != '0' && x != '1'))
             {
                 throw new ArgumentException("String value must be binary (only a '1' or a '0'");
             }
 
             // store in reverse order
             _vals = s.Reverse().ToArray();
+        }
+
+        override public string ToString()
+        {
+            return string.Join(string.Empty, _vals.Reverse());
         }
     }
 }
