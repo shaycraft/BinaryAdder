@@ -27,7 +27,7 @@ namespace BinaryAdder
                 if (index > _vals.Length)
                 {
                     int oldLength = _vals.Length;
-                    Array.Resize(ref _vals, index + 1);
+                    Array.Resize(ref _vals, (int)Math.Ceiling(index + index * 0.3));
                     for (int i = oldLength; i < index; i++)
                     {
                         _vals[i] = '0';
@@ -67,7 +67,13 @@ namespace BinaryAdder
 
         override public string ToString()
         {
-            return string.Join(string.Empty, _vals.Reverse());
+            var reversed = _vals.Reverse();
+            int startIdx = 0;
+            // skip leading zero'd
+            while (reversed.ElementAt(startIdx) != '1') ++startIdx;
+
+            return string.Join(string.Empty, reversed.Skip(startIdx));
+            //return string.Join(string.Empty, _vals.Reverse());
         }
     }
 }
