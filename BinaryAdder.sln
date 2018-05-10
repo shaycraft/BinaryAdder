@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryAdder", "BinaryAdder.csproj", "{365B7B60-83EF-4EEE-A4AC-2684511C70F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Debug|x64.Build.0 = Debug|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Debug|x86.Build.0 = Debug|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Release|x64.ActiveCfg = Release|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Release|x64.Build.0 = Release|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Release|x86.ActiveCfg = Release|Any CPU
+		{365B7B60-83EF-4EEE-A4AC-2684511C70F7}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ACB9EF8-09BF-4FCF-B3EE-5BE7E3E9CD40}
+	EndGlobalSection
+EndGlobal
