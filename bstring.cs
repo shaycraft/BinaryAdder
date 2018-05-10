@@ -12,7 +12,7 @@ namespace BinaryAdder
         {
             get
             {
-                if (index > _vals.Length)
+                if (index >= _vals.Length)
                 {
                     return '0';
                 }
@@ -46,6 +46,23 @@ namespace BinaryAdder
 
             // store in reverse order
             _vals = s.Reverse().ToArray();
+        }
+
+        public bstring(int size)
+        {
+            _vals = new char[size];
+            for (int i = 0; i < _vals.Length; i++)
+            {
+                _vals[i] = '0';
+            }
+        }
+
+        public int length
+        {
+            get
+            {
+                return _vals.Length;
+            }
         }
 
         override public string ToString()
