@@ -59,8 +59,8 @@ namespace BinaryAdder
             bstring bstring = new bstring(Convert.ToString(z, 2).ToString());
 
             bnode result;
-            result.r = bstring[1];
-            result.carry = bstring[0];
+            result.r = bstring[0];
+            result.carry = bstring[1];
 
             return result;
         }
